@@ -95,7 +95,7 @@ function App() {
   return <div className="app-shell" data-theme={theme}>
     <header className="site-header">
       <button className="mobile-menu icon-button" onClick={() => setMobileMenu(!mobileMenu)} aria-label="Abrir menu">{mobileMenu ? <X /> : <Menu />}</button>
-      <button type="button" className="brand brand-home" onClick={goHome} aria-label="Voltar ao início da loja"><span className="brand-word">E-commerce</span></button>
+      <button type="button" className="brand brand-home" onClick={goHome} aria-label="Voltar ao início da loja"><span className="brand-word">Loja virtual</span></button>
       <label className="header-search"><Search size={18} /><input aria-label="Buscar produtos" placeholder="Buscar produtos e marcas" value={query} onChange={event => setQuery(event.target.value)} /></label>
       <div className="header-actions">
         <button className="icon-button theme-toggle" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} aria-label="Alternar tema">{theme === 'light' ? <Moon size={19} /> : <Sun size={19} />}</button>
